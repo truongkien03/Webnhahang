@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/base.css">
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="./asset/pay.css">
+    <link rel="stylesheet" href="./asset/button.css">
+    <link rel="stylesheet" href="./asset/responsive.css">
+    <link rel="shortcut icon" type="image/png" href="./asset/img/logo-main.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Thanh toán</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav" style="min-height: 160px;">
+            <div class="nav-top">
+                <marquee width="100%" behavior="alternate">
+                    <div class="nav-top-title">Không gian ẩm thực Việt</div>
+                </marquee>
+            </div>
+            <div class="nav-main-tablet">
+                <div class="nav-main-1">
+                    <label for="nav-mobile-input" class="nav-bars-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div>
+                <div class="nav-main-2">
+                    <img src="./asset/img/logo-main.png" alt="">
+                </div>
+                <div class="nav-main-3">
+                    <div class="col-4">
+                        <div class="col-4-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col-4-info">
+                            <span>Liên hệ đặt món</span>
+
+                            <h5>0867891733</h5>
+                        </div>
+                        <div class="col-4-contact">
+                            <div class="col-4-icon-user">
+                                <button class="col-4-item">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <div class="col-4-notify">
+                                    <div class="header-header-notify">
+                                        <header class="header-notify">
+                                            <h3>Tìm kiếm</h3>
+                                        </header>
+                                    </div>
+                                    <div class="notify-input">
+                                        <input type="text" class="input-notify" placeholder="Tìm kiếm sản phẩm">
+                                        <div class="header__search-history">
+                                            <h3 class="header__search-history-hedding">Lịch sử tìm kiếm</h3>
+                                            <ul class="header__search-history-list">
+                                                <li class="header__search-history-item">
+                                                    <a href="">Lẩu hải sản</a>
+                                                </li>
+                                                <li class="header__search-history-item">
+                                                    <a href="">Cua hấp xả</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4-icon-user">
+                                <button class="col-4-item">
+                                    <i class="fa-solid fa-user"></i>
+                                </button>
+                                <div class="col-4-login">
+                                    <div class="header-header-login">
+                                        <header class="header-login">
+                                            <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+                                            <p>Nhập email và mật khẩu của bạn:</p>
+                                        </header>
+                                    </div>
+                                    <div class="login-input">
+                                        <input type="text" class="input-notify" placeholder="Nhập số điện thoại">
+                                        <input type="text" class="input-notify" placeholder="Nhập Email">
+                                        <input type="text" class="input-notify" placeholder="Nhập mật khẩu">
+                                    </div>
+                                    <div class="button-login">
+                                        <button>Đăng nhập</button>
+                                    </div>
+                                    <div class="info-login">
+                                        <p>Khách hàng mới? <a href="">Tạo tài khoản</a>
+                                        </p>
+                                        <p>Quên mật khẩu? <a href="">Khôi phục mật khẩu</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4-icon-user">
+                                <button class="col-4-item">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                                <div class="col-4-cart">
+                                    <div class="header-header">
+                                        <header class="header-cart">
+                                            <div class="cart-title">
+                                                <p>Giỏ hàng</p>
+                                            </div>
+                                            <div class="icon-cart">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </div>
+                                            <div class="cart-description" style="border-bottom: 1px solid #e1e1e1;">
+                                                <p>Hiện chưa có sản phẩm</p>
+                                            </div>
+                                        </header>
+                                    </div>
+                                    <div class="cart-total">
+                                        <p class="text-left">TỔNG TIỀN:</p>
+                                        <p class="text-right">0₫</p>
+                                    </div>
+                                    <div class="button-cart-pay">
+                                        <a href="./pay.html"><button>Thanh Toán</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4-order">
+                                <a href="pay.html"><button>ĐẶT MÓN ONLINE</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-small">
+                <div class="nav-main-1">
+                    <label for="nav-mobile-input" class="nav-bars-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </div>
+                <div class="nav-main-2">
+                    <img style="width: 120px;" src="./asset/img/logo-main.png" alt="">
+                </div>
+                <div style="margin-top: 35px;" class="col-4-contact">
+                    <div class="col-4-icon-user">
+                        <button class="col-4-item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="col-4-notify">
+                            <div class="header-header-notify">
+                                <header class="header-notify">
+                                    <h3>Tìm kiếm</h3>
+                                </header>
+                            </div>
+                            <div class="notify-input">
+                                <input type="text" class="input-notify" placeholder="Tìm kiếm sản phẩm">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-hedding">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Lẩu hải sản</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Cua hấp xả</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4-icon-user">
+                        <button class="col-4-item">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                        <div class="col-4-login">
+                            <div class="header-header-login">
+                                <header class="header-login">
+                                    <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+                                    <p>Nhập email và mật khẩu của bạn:</p>
+                                </header>
+                            </div>
+                            <div class="login-input">
+                                <input type="text" class="input-notify" placeholder="Nhập số điện thoại">
+                                <input type="text" class="input-notify" placeholder="Nhập Email">
+                                <input type="text" class="input-notify" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="button-login">
+                                <button>Đăng nhập</button>
+                            </div>
+                            <div class="info-login">
+                                <p>Khách hàng mới? <a href="">Tạo tài khoản</a>
+                                </p>
+                                <p>Quên mật khẩu? <a href="">Khôi phục mật khẩu</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4-icon-user">
+                        <button class="col-4-item">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <div class="col-4-cart">
+                            <div class="header-header">
+                                <header class="header-cart">
+                                    <div class="cart-title">
+                                        <p>Giỏ hàng</p>
+                                    </div>
+                                    <div class="icon-cart">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                    <div class="cart-description" style="border-bottom: 1px solid #e1e1e1;">
+                                        <p>Hiện chưa có sản phẩm</p>
+                                    </div>
+                                </header>
+                            </div>
+                            <div class="cart-total">
+                                <p class="text-left">TỔNG TIỀN:</p>
+                                <p class="text-right">0₫</p>
+                            </div>
+                            <div class="button-cart-pay">
+                                <a href="./pay.html"><button>Thanh Toán</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4-order">
+                        <a href="pay.html"><button>ĐẶT MÓN ONLINE</button></a>
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" name="" class="nav__input" id="nav-mobile-input">
+            <label for="nav-mobile-input" class="nav-overlay"></label>
+            <nav class="nav__mobile">
+                <label for="nav-mobile-input" class="nav-mobile-close ">
+                    <i class="fa-solid fa-xmark "></i>
+                </label>
+                <ul class="nav__mobile-list">
+                    <li class="nav__mobile-link"><a href="./select.html">THỰC ĐƠN</a></li>
+                    <li class="nav__mobile-link">
+                        <a href="./order.html">ORDER MÓN ĂN</a></li>
+                    <li class="nav__mobile-link">
+                        <a href="./Blog.html">BLOG</a></li>
+                    <li class="nav__mobile-link">
+                        <a href="./introduce.html">GIỚI THIỆU</a></li>
+                    <li class="nav__mobile-link">
+                        <div class="offcanvas offcanvas-end" id="demo">
+                            <div class="container mt-3" style="display: block;">
+                                <form action="/action_page.php">
+                                    <div class="mb-3 mt-3">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                    </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                <form action="/action_page.php">
+                                    <div class="mb-3 mt-3">
+                                        <label for="comment">Comments:</label>
+                                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <span style="font-size: 19px;">LIÊN HỆ</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-middle">
+                <div class="col-1">
+                    <div class="nav-logo">
+                        <a href="./index.html">
+                            <img src="./asset/img/logo-main.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="col-2-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="col-2-info">
+                        <h5 style="color: #65BB47;">Giờ mở cửa</h5>
+                        <span>Thứ 2 - CN: 9h - 23h00</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="col-3-list">
+                        <ul>
+                            <li><a href="./index.html">TRANG CHỦ</a></li>
+                            <li><a href="./select.html">THỰC ĐƠN</a></li>
+                            <li>
+                                <a href="./order.html">ORDER MÓN ĂN</a></li>
+                            <li>
+                                <a href="./Blog.html">BLOG</a></li>
+                            <li>
+                                <a href="./introduce.html">GIỚI THIỆU</a></li>
+                                <li>
+                                    <button style="font-size: 12px;" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">LIÊN HỆ</button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Liên Hệ</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form action="/action_page.php">
+                                    <div class="mb-3 mt-3">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                    </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                <form action="/action_page.php">
+                                    <div class="mb-3 mt-3">
+                                        <label for="comment">Comments:</label>
+                                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="col-4-icon">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="col-4-info">
+            <span>Liên hệ đặt món</span>
+
+            <h5>0867891733</h5>
+        </div>
+        <div class="col-4-contact">
+            <div class="col-4-icon-user">
+                <button class="col-4-item">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                <div class="col-4-notify">
+                    <div class="header-header-notify">
+                        <header class="header-notify">
+                            <h3>Tìm kiếm</h3>
+                        </header>
+                    </div>
+                    <div class="notify-input">
+                        <input type="text" class="input-notify" placeholder="Tìm kiếm sản phẩm">
+                        <div class="header__search-history">
+                            <h3 class="header__search-history-hedding">Lịch sử tìm kiếm</h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="">Lẩu hải sản</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Cua hấp xả</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4-icon-user">
+                <button class="col-4-item">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+                <div class="col-4-login">
+                    <div class="header-header-login">
+                        <header class="header-login">
+                            <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+                            <p>Nhập email và mật khẩu của bạn:</p>
+                        </header>
+                    </div>
+                    <div class="login-input">
+                        <input type="text" class="input-notify" placeholder="Nhập số điện thoại">
+                        <input type="text" class="input-notify" placeholder="Nhập Email">
+                        <input type="text" class="input-notify" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="button-login">
+                        <button>Đăng nhập</button>
+                    </div>
+                    <div class="info-login">
+                        <p>Khách hàng mới? <a href="">Tạo tài khoản</a>
+                        </p>
+                        <p>Quên mật khẩu? <a href="">Khôi phục mật khẩu</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4-icon-user">
+                <button class="col-4-item">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                <div class="col-4-cart">
+                    <div class="header-header">
+                        <header class="header-cart">
+                            <div class="cart-title">
+                                <p>Giỏ hàng</p>
+                            </div>
+                            <div class="icon-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="cart-description" style="border-bottom: 1px solid #e1e1e1;">
+                                <p>Hiện chưa có sản phẩm</p>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="cart-total">
+                        <p class="text-left">TỔNG TIỀN:</p>
+                        <p class="text-right">0₫</p>
+                    </div>
+                    <div class="button-cart-pay">
+                        <a href="./pay.html"><button>Thanh Toán</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4-order">
+                <a href="pay.html"><button>ĐẶT MÓN ONLINE</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="coursedk">
+        <div class="coursedk1">
+            <a href=""><strong>Giỏ hàng &#187;</strong></a><span> Xác nhận & thanh toán</span>
+            <div>
+                <h1>Thông tin giao hàng</h1>
+                <form action="#">
+                    <div>
+                        <label><strong>Họ và tên</strong></label>
+                        <input type="text" class="form-control" name="" placeholder="Họ và tên" required>
+                    </div>
+                    <div>
+                        <label><strong>Số điện thoại</strong></label>
+                        <input type="text" class="form-control" id="phone" placeholder="Số điện thoại" required>
+                    </div>
+                    <div>
+                        <label>Ngày đặt</label>
+                        <input type="date" class="form-control" placeholder="Ngày đặt" required/>
+                    </div>
+                    <div>
+                        <label><strong>Phương thức vận chuyển</strong></label>
+                        <select class="form-control">
+							<option>Phương thức vận chuyển</option>
+							<option>Nhanh</option>
+							<option>Chậm</option>
+						</select>
+                    </div>
+                    <div>
+                        <label><strong>Địa chỉ</strong></label>
+                        <select class="form-control">
+							<option>Chọn tỉnh / thành</option>
+							<option>Đằ nẵng</option>
+							<option>Quảng nam</option>
+							<option>Quảng trị</option>
+							<option>Huế</option>
+							<option>Quảng Ngãi</option>
+						</select>
+                        <select class="form-control">
+							<option>Chọn quận / huyện</option>
+							<option>Cẩm lệ</option>
+							<option>Hải châu</option>
+                            <option>Liên chiểu</option>
+                            <option>Sơn trà</option>
+                            <option>Ngũ hành sơn</option>
+                            <option>Thanh khê</option>
+						</select>
+                        <select class="form-control">
+							<option>Chọn phường / xã</option>
+							<option>Thạch Thang</option>
+							<option>Thanh Bình</option>
+							<option>Thuận Phước</option>
+							<option>Hòa Thuận Tây</option>
+							<option>Nam Dương</option>
+						</select>
+                    </div>
+                    <div>
+                        <label><strong>Voucher của nhà hàng</strong></label>
+                        <input type="text" class="form-control" id="phone" placeholder="Nhập mã voucher" required>
+                    </div>
+                    <div>
+                        <label><strong>Lời nhắn</strong></label>
+                        <textarea class="form-control" placeholder="Lời nhắn"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" class="form-control" value="THANH TOÁN">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="coursedk2" style="display: flex; flex-flow: column;">
+            <div>
+                <h3>Phương thức thanh toán</h3>
+            </div>
+            <div>
+                <input type="radio" name="thanhtoan">
+                <strong>Nhận hàng khi thanh toán</strong>
+            </div>
+            <div>
+                <input type="radio" name="thanhtoan">
+                <strong>Thẻ tín dụng/ghi nợ</strong>
+            </div>
+            <div>
+                <input type="radio" name="thanhtoan">
+                <strong>Ví momo</strong>
+            </div>
+            <div>
+                <input type="radio" name="thanhtoan">
+                <strong>Nhận tại cửa hàng</strong>
+            </div>
+            <div>
+                <img src="./asset/product/pay/1.jpg" id="imgtt1">
+                <img src="./asset/product/pay/2.png" id="imgtt1">
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="block">
+                        <div class="footer-icon">
+                            <img src="./asset/img/logo-main.png" alt="">
+                            <div class="col-1-info">
+                                <span class="small-text" style="font-size: 16px;">Nhà hàng Bảo Kiên phục vụ các món ăn mang phong vị ẩm thực truyền thống. Ghé thăm Bảo Kiên, thưởng thức những món ăn ngon trong không gian ẩm thực hoài niệm chắc chắn sẽ là trải nghiệm ăn uống thú vị và khó quên đối với thực khách.</span>
+                            </div>
+                            <img src="./asset/img/footer-icon-bottom.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="block">
+                        <p class="title">CHÍNH SÁCH</p>
+                        <a href="" class="small-text apply--hover">Tìm kiếm</a>
+                        <a href="" class="small-text apply--hover">Giới thiệu</a>
+                        <a href="" class="small-text apply--hover">Chính sách đổi trả</a>
+                        <a href="" class="small-text apply--hover">Chính sách bảo mật</a>
+                        <a href="" class="small-text apply--hover">Chính sách giải quyết khiếu nại</a>
+                        <a href="" class="small-text apply--hover">Điều khoản dịch vụ</a>
+                        <a href="" class="small-text apply--hover">Liên hệ</a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="block">
+                        <p class="title">SẢN PHẨM</p>
+                        <a href="" class="small-text apply--hover">Sản phẩm khuyến mãi</a>
+                        <a href="" class="small-text apply--hover">Sản phẩm nổi bật</a>
+                        <a href="" class="small-text apply--hover">Tất cả sản phẩm</a>
+                        <div class="d-flex">
+                            <a href="" class="small-text apply--hover"><img src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/bo-cong-thuong-2.png" width="32" height="32" alt=""></a>
+                            <a href="" class="small-text apply--hover"><img src="https://frontend.tikicdn.com/_desktop-next/static/img/footer/bo-cong-thuong.svg" height="32" width="83" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="block">
+                        <p class="title">MENU</p>
+                        <a href="" class="small-text apply--hover">Tất cả sản phẩm</a>
+                        <a href="./menu.html" class="small-text apply--hover">Thực Đơn</a>
+                        <a href="" class="small-text apply--hover">Blog</a>
+                        <a href="" class="small-text apply--hover">Giới thiệu</a>
+                        <a href="" class="small-text apply--hover">Liên Hệ</a>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="block">
+                        <p class="title">FANPAGE</p>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNh%25C3%25A0-H%25C3%25A0ng-B%25E1%25BA%25A3o-Ki%25C3%25AAn-111273108261495&tabs&width=340&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=164393960798414"
+                            width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="myBtn" title="Lên đầu trang"><i style="font-size: 25px;" class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

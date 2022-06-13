@@ -1,0 +1,78 @@
+.coursedk {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 30px;
+    padding: 10px;
+    background-color: #FAFAFA;
+    border-radius: 15px;
+    margin-top: 200px;
+}
+
+.coursedk div:last-child {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.coursedk1 h1 {
+    color: red;
+    margin-top: 15px;
+}
+
+.coursedk1 {
+    width: 600px;
+    padding: 15px;
+    border: 1px solid #BDBDBD;
+    border-radius: 15px;
+}
+
+.coursedk a {
+    text-decoration: none;
+    color: black;
+}
+
+.coursedk1 form div {
+    margin-top: 15px;
+}
+
+.coursedk1 form input {
+    width: 550px;
+}
+
+.coursedk1 form input[type=submit] {
+    width: 200px;
+    margin: auto;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.coursedk1 .form1 div:first-child {
+    margin-right: 30px;
+}
+
+.coursedk2 {
+    padding: 20px;
+    color: brown;
+}
+
+.coursedk2 {
+    display: flex;
+    flex-flow: column;
+}
+
+.coursedk2 h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.coursedk2 input[type=radio] {
+    margin-top: 5px;
+}
+
+.coursedk2 div {
+    margin-top: 10px;
+}
+
+#imgtt1 {
+    width: 300px;
+}

@@ -1,0 +1,38 @@
+.menu-info {
+    display: flex;
+}
+
+.info-img img {
+    width: 314px;
+    height: 314px;
+}
+
+.info-img img:hover {
+    transform: scale(1.2);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px;
+    z-index: 1;
+    transition: all .5s ease-in-out 0s;
+}
+
+.info-description {
+    margin-top: 20px;
+}
+
+.info-description h3 {
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.info-description h3:hover {
+    color: rgb(67, 67, 163);
+}
+
+.info-description span {
+    color: #999;
+}
+
+.info-description p {
+    font-weight: 300;
+    color: black;
+}
