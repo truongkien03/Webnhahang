@@ -176,6 +176,10 @@
     /* tablet */
     
     @media only screen and (min-width: 739px) and (max-width: 1200px) {
+        /* loader */
+        #cooking {
+            display: none;
+        }
         /* header */
         .nav-middle {
             display: none;
@@ -247,6 +251,10 @@
     /* mobile */
     
     @media only screen and (max-width:739px) {
+        /* loader */
+        #cooking {
+            display: none;
+        }
         /* header */
         /* slide */
         .slide-sz {
