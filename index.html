@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./asset/style.css">
     <link rel="stylesheet" href="./asset/button.css">
     <link rel="stylesheet" href="./asset/responsive.css">
+    <link rel="stylesheet" href="./asset/notifi.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" type="image/png" href="./asset/img/logo-main.png" />
@@ -263,7 +264,7 @@
                     <li class="nav__mobile-link">
                         <div class="offcanvas offcanvas-end" id="demo">
                             <div class="container mt-3" style="display: block;">
-                                <form action="/action_page.php">
+                                <form>
                                     <div class="mb-3 mt-3">
                                         <label for="email">Email:</label>
                                         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
@@ -279,7 +280,7 @@
                                     </div>
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
-                                <form action="/action_page.php">
+                                <form>
                                     <div class="mb-3 mt-3">
                                         <label for="comment">Comments:</label>
                                         <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
@@ -330,7 +331,7 @@
                                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                                <form action="/action_page.php">
+                                <form>
                                     <div class="mb-3 mt-3">
                                         <label for="email">Email:</label>
                                         <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
@@ -344,15 +345,33 @@
                                     <input class="form-check-input" type="checkbox" name="remember"> Remember me
                                     </label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
-                                <form action="/action_page.php">
+                                <form>
                                     <div class="mb-3 mt-3">
                                         <label for="comment">Comments:</label>
                                         <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+
                                 </form>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Cảm ơn bạn đã gửi yêu cầu, chúng tôi sẽ phản hồi sớm nhất.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -861,6 +880,22 @@
             <a href="tel:0867891733">
                 <span class="text-hotline">0867.891.733</span>
             </a>
+        </div>
+    </div>
+    <!-- notifi -->
+    <div class="modal-custom hide">
+        <div class="modal-custom__inner">
+            <div class="modal-custom__header">
+                <p>Nhà hàng Bảo Kiên</p>
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-custom__body">
+                <h2>Cảm ơn quý khách</h2>
+                <p>Yêu cầu liên hệ của bạn sẽ được phản hồi sớm nhất</p>
+            </div>
+            <div class="modal-custom__footer">
+                <button>Close</button>
+            </div>
         </div>
     </div>
     <button id="myBtn" title="Lên đầu trang"><i style="font-size: 25px;" class="fa-solid fa-arrow-up"></i></button>

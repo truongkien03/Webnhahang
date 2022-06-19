@@ -338,11 +338,8 @@
     background-color: #65bb47;
     border-radius: 100%;
     border: 2px solid transparent;
-    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
     animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
     transition: all .5s;
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
 }
 
@@ -356,23 +353,14 @@
     background-size: 20px;
     border-radius: 100%;
     border: 2px solid transparent;
-    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
     animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .hotline-phone-ring-img-circle .pps-btn-img {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -392,7 +380,6 @@
     background-size: 100%;
     cursor: pointer;
     transition: all 0.8s;
-    -webkit-transition: all 0.8s;
     z-index: 9;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px !important;
