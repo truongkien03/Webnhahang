@@ -105,6 +105,7 @@
             display: none;
         }
     }
+    /* range_tablet */
     /* tablet */
     
     @media (max-width:1023px) {
@@ -176,6 +177,7 @@
     /* tablet */
     
     @media only screen and (min-width: 739px) and (max-width: 1200px) {
+        /* range_tablet */
         /* loader */
         #cooking {
             display: none;
@@ -252,6 +254,66 @@
     
     @media only screen and (max-width:739px) {
         /* loader */
+        /* notifi */
+        .seach-history {
+            position: absolute;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            margin: 34px -200px;
+            background-color: #fff;
+            display: none;
+        }
+        /* .col-4-login */
+        .col-4-login {
+            position: absolute;
+            top: 120%;
+            width: 322px;
+            height: 459px;
+            right: -39px;
+            box-shadow: 0px 0px 10px 0px #a4a3a3;
+            background-color: rgb(249, 249, 249);
+            border-radius: 3px;
+            display: none;
+            animation: fadeIn ease-in 0.3s;
+        }
+        .login-input input {
+            width: 290px;
+        }
+        .col-4-login::after {
+            content: "";
+            border-width: 20px 26px;
+            border-style: solid;
+            border-color: transparent transparent #fff transparent;
+            position: absolute;
+            left: 233px;
+            top: -30px;
+        }
+        /* .col-4-cart */
+        .col-4-cart {
+            position: absolute;
+            top: 120%;
+            width: 318px;
+            height: 370px;
+            right: 10px;
+            box-shadow: 0px 0px 10px 0px #a4a3a3;
+            background-color: rgb(249, 249, 249);
+            border-radius: 3px;
+            display: none;
+            animation: fadeIn ease-in 0.3s;
+        }
+        .cart-title {
+            width: 280px;
+        }
+        .col-4-cart::after {
+            content: "";
+            border-width: 20px 26px;
+            border-style: solid;
+            border-color: transparent transparent #fff transparent;
+            position: absolute;
+            left: 266px;
+            top: -30px;
+        }
         #cooking {
             display: none;
         }
